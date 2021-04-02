@@ -1,0 +1,1359 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0; }
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/ }
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/* Vertical rhythm */
+/* ============================================ */
+p, table, blockquote, address, pre, iframe, form, figure, dl {
+  margin: 0; }
+
+/* Headings */
+/* ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0; }
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 0; }
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */ }
+
+address {
+  font-style: inherit; }
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b, strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img, embed, object, iframe {
+  vertical-align: bottom; }
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit; }
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox; }
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button, select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, [type="button"], [type="reset"], [type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none; }
+
+button[disabled], [type="button"][disabled], [type="reset"][disabled], [type="submit"][disabled] {
+  cursor: default; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none; }
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0; }
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */ }
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer; }
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none; }
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption {
+  text-align: left; }
+
+td {
+  vertical-align: top;
+  padding: 0; }
+
+th {
+  vertical-align: top;
+  padding: 0;
+  text-align: left;
+  font-weight: bold; }
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template, [hidden] {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+/*追記
+*/
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", "游ゴシック Medium","游ゴシック体",Verdana, Meiryo, sans-serif;
+  line-height: 2; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2; }
+
+.header {
+  background: #CACED8; }
+  .header-box {
+    width: 93.0375%;
+    margin: 0 auto;
+    padding-top: 5.41rem;
+    display: flex; }
+  .header-logo {
+    width: 15.4809888486%;
+    margin-left: -.3%; }
+  .header-txt {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3.2;
+    margin-left: 25.4%; }
+
+.header._single .header-box {
+  padding-bottom: 4.5rem; }
+.header._single .header-txt {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3.2rem;
+  color: #61DED1;
+  line-height: 1.6; }
+
+.gnav-btn {
+  width: 6.7177213489%;
+  height: 5.5rem;
+  position: fixed;
+  top: 5.5rem;
+  right: 3.5%;
+  z-index: 9999;
+  display: block; }
+  .gnav-btn span {
+    display: block;
+    height: .3rem;
+    background: #fff;
+    position: absolute;
+    right: .2rem; }
+    .gnav-btn span:first-of-type {
+      width: 100%;
+      top: .9vw;
+      transition: .5s; }
+    .gnav-btn span:nth-of-type(2) {
+      width: 80%;
+      top: 2.5vw;
+      transition: .5s; }
+
+.gnav-btn.open {
+  display: block; }
+  .gnav-btn.open span {
+    display: block;
+    height: .3rem;
+    background: #fff;
+    position: absolute;
+    right: .2rem; }
+    .gnav-btn.open span:first-of-type {
+      width: 100%;
+      top: .9vw;
+      transform: rotate(45deg);
+      transition: .5s; }
+    .gnav-btn.open span:nth-of-type(2) {
+      width: 100%;
+      top: .9vw;
+      transform: rotate(-45deg);
+      transition: .5s; }
+
+.gnav-wrap {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(51, 51, 51, 0.8);
+  padding: 5.4rem 10%; }
+  .gnav-wrap .header-txt {
+    text-align: center;
+    color: #fff; }
+  .gnav-wrap .gnav::after {
+    content: '';
+    width: 20%;
+    height: .2rem;
+    background: #fff;
+    display: block; }
+  .gnav-wrap .gnav-ul {
+    margin-bottom: 3rem; }
+    .gnav-wrap .gnav-ul li a {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 3.2rem;
+      font-weight: bold; }
+      .gnav-wrap .gnav-ul li a:hover {
+        color: #61DED1; }
+  .gnav-wrap .news-box {
+    width: 100%;
+    margin-top: 4rem; }
+    .gnav-wrap .news-box .news-tit {
+      color: #fff; }
+    .gnav-wrap .news-box .news-txt {
+      color: #fff; }
+
+.kv {
+  padding-top: 13.7rem;
+  background: url("../img/bk_h1@2x.png") #CACED8;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 51%; }
+  .kv h1.div-tit {
+    font-family: "Poppins", sans-serif;
+    font-size: 14.8rem;
+    font-weight: bold;
+    line-height: 1.0810810811;
+    color: #fff;
+    letter-spacing: 0.06em;
+    width: fit-content;
+    margin: auto;
+    padding-top: .3rem;
+    padding-left: .6rem; }
+  .kv a.div-box {
+    width: 19.0625%;
+    margin-left: auto;
+    margin-top: 3.2rem;
+    background: #fff;
+    padding: .3rem 1.7rem 1.6rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s; }
+    .kv a.div-box:hover {
+      background: #4F4583;
+      transition: .5s; }
+      .kv a.div-box:hover .kv-inner .div-tit {
+        color: #fff;
+        transition: .5s; }
+        .kv a.div-box:hover .kv-inner .div-tit span {
+          color: #fff;
+          transition: .5s; }
+      .kv a.div-box:hover .kv-inner .div-txt {
+        color: #fff;
+        transition: .5s; }
+      .kv a.div-box:hover .div-btn img {
+        transform: scale(2);
+        transition: .5s; }
+  .kv .div-btn {
+    background: #E8EDFC;
+    border-radius: 50%;
+    width: 3.4rem;
+    height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .7rem; }
+    .kv .div-btn img {
+      width: 1.8rem;
+      height: 1.8rem;
+      transition: .5s; }
+  .kv .kv-inner .div-tit {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #4F4583;
+    letter-spacing: 0.03em;
+    transition: .5s; }
+    .kv .kv-inner .div-tit span {
+      font-size: 0.4545454545em;
+      color: #333333;
+      margin-left: 1.7rem;
+      display: inline-block;
+      vertical-align: .2rem;
+      transition: .5s; }
+  .kv .kv-inner .div-txt {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.3rem;
+    transition: .5s; }
+
+.intro {
+  background: #CACED8;
+  padding: 8.3rem 0px 0px 8%; }
+  .intro h2.intro-tit {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    margin-left: 5.9%;
+    letter-spacing: 0.06em; }
+  .intro-box {
+    background: #fff;
+    width: 53.35%;
+    padding: 8.6rem 4% 8.8rem 6.5%;
+    position: relative;
+    margin-top: 16rem; }
+    .intro-box::before {
+      content: '';
+      width: 2.1rem;
+      height: 18.1rem;
+      background: url("../img/h2_intro@2x.png") no-repeat;
+      background-size: contain;
+      display: block;
+      margin-top: .7rem;
+      position: absolute;
+      top: -15.9rem;
+      left: 11%; }
+    .intro-box .intro-tit {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 3.2rem;
+      font-weight: bold;
+      line-height: 1.5625;
+      margin-bottom: 1.1rem; }
+    .intro-box .intro-txt {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 2rem;
+      line-height: 1.8;
+      letter-spacing: -0.07em; }
+
+.learn {
+  background: url("../img/bk_learn@2x.png") no-repeat;
+  background-size: contain;
+  margin-top: -13.3rem;
+  margin-bottom: 13.6rem;
+  padding-top: 55.5rem;
+  padding-left: 10%; }
+  .learn-tit {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+    font-size: 8rem;
+    letter-spacing: 0.04em;
+    line-height: 1.625; }
+    .learn-tit span {
+      position: relative; }
+      .learn-tit span::after {
+        content: '学ぶ';
+        font-size: 8rem;
+        position: absolute;
+        top: -6px;
+        left: 6px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #333333;
+        -webkit-text-fill-color: #fff; }
+  .learn-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #E66969;
+    letter-spacing: 0.04em;
+    margin-left: 27.2%;
+    display: block;
+    width: fit-content;
+    margin-top: 3vw; }
+    .learn-btn::after {
+      content: url("../img/btn_learn.png");
+      display: inline-block;
+      margin-left: 2.9rem;
+      transition: .3s; }
+    .learn-btn:hover::after {
+      transform: scale(1.2);
+      transition: .3s; }
+
+.news {
+  background: url("../img/bk_news.png") no-repeat;
+  background-position: 13px 1px;
+  padding-top: 140px; }
+  .news h2.news-tit {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 12rem;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #4F4583;
+    margin-left: 10%;
+    position: relative;
+    height: 1em;
+    height: 2em; }
+    .news h2.news-tit::before {
+      content: '';
+      width: 19.6rem;
+      height: 5.9rem;
+      display: block;
+      background: #E66969;
+      position: absolute;
+      top: 0;
+      left: -.1rem;
+      z-index: 1; }
+    .news h2.news-tit span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 6.7%;
+      z-index: 5; }
+    .news h2.news-tit::before {
+      top: 11.29vw; }
+    .news h2.news-tit span {
+      top: 10.1vw; }
+  .news-inner {
+    width: 81.875%;
+    margin-left: auto;
+    margin-top: 128px;
+    display: flex;
+    justify-content: space-between; }
+  .news-box {
+    width: 37.6908396947%; }
+    .news-box p.news-tit {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 2.4rem;
+      margin-bottom: 1.3rem; }
+      .news-box p.news-tit time {
+        letter-spacing: 0.08em;
+        margin-right: 4.1%; }
+      .news-box p.news-tit span {
+        color: #61DED1; }
+    .news-box p.news-txt {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 2rem; }
+    .news-box:nth-of-type(2) {
+      margin-top: 7.2rem;
+      margin-left: -2%; }
+      .news-box:nth-of-type(2) p.news-tit {
+        font-size: 3.2rem; }
+        .news-box:nth-of-type(2) p.news-tit time {
+          margin-right: 4.9%; }
+        .news-box:nth-of-type(2) p.news-tit span {
+          font-size: 2.4rem;
+          vertical-align: .3rem; }
+  .news .archive-btn {
+    width: 10.5916030534%;
+    height: 30rem;
+    position: relative;
+    margin-top: 15.6rem; }
+    .news .archive-btn a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #E8EDFC;
+      transition: .3s; }
+      .news .archive-btn a::before {
+        content: url("../img/btn_news.png");
+        width: 4.8rem;
+        height: 4.8rem;
+        position: absolute;
+        top: 4.1rem;
+        left: 0;
+        right: 0;
+        margin: auto; }
+      .news .archive-btn a span {
+        transform: rotate(90deg);
+        position: absolute;
+        top: 169px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.04em;
+        color: #E66969; }
+      .news .archive-btn a:hover {
+        background: #E66969;
+        transition: .5s; }
+        .news .archive-btn a:hover::before {
+          content: url("../img/btn_news_hover.png"); }
+        .news .archive-btn a:hover span {
+          color: #fff; }
+
+.four {
+  margin-top: 11.5vw; }
+  .four-inner {
+    display: flex;
+    flex-wrap: wrap; }
+  .four-box {
+    width: 50%;
+    height: 29.6875vw;
+    text-align: center; }
+    .four-box a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .four-box a:hover img {
+        transform: scale(1.1);
+        transition: .3s ease-in-out; }
+    .four-box img {
+      width: 69.53125%;
+      position: absolute;
+      top: 8.5vw;
+      left: 1%;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+      transition: .3s ease-in-out; }
+    .four-box .four-tit {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: #4F4583;
+      letter-spacing: 0.06em;
+      line-height: 1;
+      font-size: 7.6rem;
+      position: absolute;
+      top: 4.8vw;
+      left: 1%;
+      right: 0;
+      margin: auto;
+      z-index: 3; }
+    .four-box .four-txt {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 2.4rem;
+      position: absolute;
+      top: 22.2vw;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .four-box:first-of-type a {
+      background: #E8EDFC; }
+    .four-box:nth-of-type(2) .four-tit {
+      left: -3%; }
+    .four-box:nth-of-type(2) img {
+      top: 8.6vw;
+      left: -2%; }
+    .four-box:nth-of-type(2) .four-txt {
+      left: -2%; }
+    .four-box:nth-of-type(3) .four-tit {
+      top: 5.3vw;
+      left: 4.9%; }
+    .four-box:nth-of-type(3) img {
+      top: 8.85vw;
+      left: 1%; }
+    .four-box:nth-of-type(3) .four-txt {
+      top: 22.6vw;
+      left: 1%; }
+    .four-box:nth-of-type(4) .four-tit {
+      top: 6vw;
+      left: -3.1%; }
+    .four-box:nth-of-type(4) img {
+      top: 8.8vw;
+      left: -2%; }
+    .four-box:nth-of-type(4) .four-txt {
+      top: 23.25vw;
+      left: 0%; }
+
+.sche {
+  margin-top: 17.8vw;
+  margin-bottom: 18vw; }
+  .sche-inner {
+    width: 79.9953125%;
+    margin: auto; }
+  .sche h2.sche-tit {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 12rem;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #4F4583;
+    margin-left: 10%;
+    position: relative;
+    height: 1em;
+    margin-bottom: 1vw; }
+    .sche h2.sche-tit::before {
+      content: '';
+      width: 19.6rem;
+      height: 5.9rem;
+      display: block;
+      background: #E66969;
+      position: absolute;
+      top: 0;
+      left: -.1rem;
+      z-index: 1; }
+    .sche h2.sche-tit span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 6.7%;
+      z-index: 5; }
+    .sche h2.sche-tit span {
+      top: -.4vw; }
+  .sche-txt {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2.4rem; }
+  .sche-list {
+    margin-top: 7.8vw; }
+    .sche-list li {
+      border-bottom: solid 0.1rem #D8D8D8;
+      padding-bottom: 2vw;
+      margin-bottom: 4vw;
+      line-height: 1; }
+      .sche-list li:last-of-type {
+        padding-bottom: 2.2vw;
+        margin-bottom: 2.95vw; }
+      .sche-list li span {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.08em;
+        display: inline-block;
+        width: 30%; }
+        .sche-list li span:first-of-type {
+          margin-left: 2.5%; }
+        .sche-list li span:nth-of-type(2) {
+          margin-left: 2.8%; }
+        .sche-list li span:last-of-type {
+          font-family: "Noto Sans JP", sans-serif;
+          margin-left: 1.2%; }
+  .sche-box {
+    display: flex;
+    justify-content: space-between; }
+    .sche-box p.sche-txt {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 1.3rem;
+      margin-left: 2%;
+      padding-top: 1.5vw; }
+  .sche-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #E66969;
+    letter-spacing: 0.04em;
+    margin-left: 27.2%;
+    display: block;
+    width: fit-content;
+    margin-right: 2%; }
+    .sche-btn::after {
+      content: url("../img/btn_learn.png");
+      display: inline-block;
+      margin-left: 2.9rem;
+      transition: .3s; }
+    .sche-btn:hover::after {
+      transform: scale(1.2);
+      transition: .3s; }
+
+.toTop a {
+  display: block;
+  background: #EDE8E2;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #4F4583;
+  text-align: center;
+  padding: .5vw; }
+  .toTop a:hover {
+    background: #4F4583;
+    color: #fff; }
+
+.pageNation {
+  background: #EDE8E2;
+  padding: 3.3rem 0; }
+  .pageNation-list {
+    width: 27.1875%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .pageNation-list a {
+      font-family: "Poppins", sans-serif;
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: #4F4583; }
+      .pageNation-list a:hover {
+        color: #E66969; }
+
+.footer {
+  width: 100%;
+  height: 30vw;
+  background: #AFB8CB; }
+
+.under-tit-wrap {
+  background: #CACED8;
+  padding: 1.5rem 0 9rem; }
+.under-tit {
+  font-family: "Poppins", sans-serif;
+  font-size: 12rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color: #4F4583;
+  line-height: 1;
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 4.4rem; }
+.under-inner {
+  width: 71.9140625%;
+  margin: 20rem auto; }
+.under-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .under-box-cont {
+    width: 43%;
+    margin-bottom: 6.8rem; }
+    .under-box-cont:nth-of-type(2n) {
+      margin-top: 7.1rem; }
+  .under-box-tit {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin-bottom: 1px; }
+    .under-box-tit span {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 3.2rem;
+      color: #61DED1;
+      letter-spacing: 0.04em;
+      font-weight: bolder;
+      margin-left: -1.3rem; }
+  .under-box-txt {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2rem;
+    line-height: 1.8; }
+
+._archive {
+  margin-bottom: 27.6rem; }
+
+._single .under-tit-wrap {
+  display: flex;
+  padding: 0;
+  background: #fff; }
+._single .under-tit {
+  background: #EDE8E2;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  color: #4F4583;
+  width: 100%;
+  text-align: center;
+  padding-left: 8.7%;
+  margin-bottom: 17.6rem; }
+._single .archive-btn {
+  width: 10.5916030534%;
+  height: 30rem;
+  position: relative;
+  width: 9.591603%;
+  height: 23.8rem; }
+  ._single .archive-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #E8EDFC;
+    transition: .3s; }
+    ._single .archive-btn a::before {
+      content: url("../img/btn_news.png");
+      width: 4.8rem;
+      height: 4.8rem;
+      position: absolute;
+      top: 4.1rem;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    ._single .archive-btn a span {
+      transform: rotate(90deg);
+      position: absolute;
+      top: 169px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-family: "Poppins", sans-serif;
+      font-size: 2.4rem;
+      letter-spacing: 0.04em;
+      color: #E66969; }
+    ._single .archive-btn a:hover {
+      background: #E66969;
+      transition: .5s; }
+      ._single .archive-btn a:hover::before {
+        content: url("../img/btn_news_hover.png"); }
+      ._single .archive-btn a:hover span {
+        color: #fff; }
+  ._single .archive-btn a::before {
+    top: 3.1rem; }
+  ._single .archive-btn a span {
+    top: 13.9rem; }
+._single .under-wrap {
+  width: 63.75%;
+  margin: 0 auto; }
+._single p.under-tit {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 4.6rem;
+  line-height: 1.4782608696;
+  background: #fff;
+  color: #333333;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 3rem; }
+._single .under-inner {
+  width: 74.2647058824%;
+  margin-top: 8rem; }
+  ._single .under-inner p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 4rem; }
+  ._single .under-inner img {
+    margin: 5.3rem 0 6.1rem; }
+
+._page .under-tit-wrap_h1 {
+  background: #CACED8;
+  padding: 8.2rem 0 14.2rem; }
+._page .under h1.under-tit {
+  font-family: "Poppins", sans-serif;
+  font-size: 12rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding-left: 0; }
+._page .under-tit-wrap_h2 {
+  width: 58.046875%;
+  backdrop-filter: blur(30px);
+  margin-top: -19.7rem;
+  padding-top: 9rem;
+  padding-left: 4.7%;
+  padding-bottom: 6.7rem; }
+._page .under h2.under-tit {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 12rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #4F4583;
+  margin-left: 10%;
+  position: relative;
+  height: 1em; }
+  ._page .under h2.under-tit::before {
+    content: '';
+    width: 19.6rem;
+    height: 5.9rem;
+    display: block;
+    background: #E66969;
+    position: absolute;
+    top: 0;
+    left: -.1rem;
+    z-index: 1; }
+  ._page .under h2.under-tit span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 6.7%;
+    z-index: 5; }
+  ._page .under h2.under-tit span {
+    left: 70.7%; }
+._page .under .under-inner {
+  width: 67.5%;
+  margin-top: 4rem;
+  margin-bottom: 9.8rem; }
+._page .under .under-box-tit {
+  margin-bottom: 1.2rem; }
+  ._page .under .under-box-tit span:first-of-type {
+    background: #EDE8E2;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2rem;
+    color: #4F4583;
+    margin-left: 0;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    text-align: center; }
+  ._page .under .under-box-tit span:nth-of-type(2) {
+    margin-left: 5%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+    white-space: nowrap;
+    color: #333333; }
+._page .under ._beige-inner {
+  width: 80.078125%;
+  margin: 0 auto 19rem; }
+  ._page .under ._beige-inner h3.under-tit {
+    padding-left: 1%;
+    margin: 0;
+    width: 33.1707317073%;
+    background: #61DED1;
+    color: #4F4583;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 7.7rem;
+    position: relative; }
+    ._page .under ._beige-inner h3.under-tit::after {
+      content: '';
+      display: block;
+      border-top: solid 4.2rem #56C4B9;
+      border-left: solid 4.9rem transparent;
+      border-right: solid 4.9rem transparent;
+      width: 9.8rem;
+      height: 4.2rem;
+      position: absolute;
+      top: 2rem;
+      right: -5rem; }
+  ._page .under ._beige-inner .under-box {
+    background: #EDE8E2;
+    padding-top: 9rem; }
+    ._page .under ._beige-inner .under-box-inner {
+      width: 85.6585365854%;
+      margin-left: 4.1%;
+      margin-bottom: 7.3rem; }
+    ._page .under ._beige-inner .under-box form {
+      margin-bottom: 5.7rem; }
+      ._page .under ._beige-inner .under-box form p {
+        line-height: 7rem;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem; }
+        ._page .under ._beige-inner .under-box form p label {
+          display: flex; }
+        ._page .under ._beige-inner .under-box form p span {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.3rem;
+          width: 7%; }
+        ._page .under ._beige-inner .under-box form p input {
+          background: #fff;
+          margin-left: auto; }
+    ._page .under ._beige-inner .under-box .btn-yajirushi {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 2.4rem;
+      color: #E66969;
+      letter-spacing: 0.04em;
+      margin-left: 27.2%;
+      display: block;
+      width: fit-content;
+      margin-left: auto; }
+      ._page .under ._beige-inner .under-box .btn-yajirushi::after {
+        content: url("../img/btn_learn.png");
+        display: inline-block;
+        margin-left: 2.9rem;
+        transition: .3s; }
+      ._page .under ._beige-inner .under-box .btn-yajirushi:hover::after {
+        transform: scale(1.2);
+        transition: .3s; }
+._page .under ._overlapp {
+  padding-top: 0;
+  margin-top: 11rem;
+  position: relative;
+  display: block; }
+  ._page .under ._overlapp .under-box-l {
+    background: #EDE8E2;
+    width: 65.3125%;
+    height: 45.3125vw; }
+  ._page .under ._overlapp .under-box-r {
+    padding-top: 0;
+    width: 73.671875%;
+    position: absolute;
+    top: 11.2rem;
+    right: 0; }
+._page .under ._L-pinkR-purple {
+  padding: 0.5rem 0 0; }
+  ._page .under ._L-pinkR-purple .under-box-l {
+    background: #E66969;
+    flex-grow: 1;
+    padding: 7.5rem 0 8.4rem;
+    position: relative; }
+    ._page .under ._L-pinkR-purple .under-box-l p {
+      color: #fff;
+      font-size: 3.2rem;
+      text-align: center;
+      line-height: 1;
+      margin-left: -1.4rem; }
+    ._page .under ._L-pinkR-purple .under-box-l::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 78px solid #fff;
+      border-left: solid 89px transparent; }
+  ._page .under ._L-pinkR-purple .under-box-r {
+    background: #4F4583;
+    flex-grow: 1.8828828829;
+    position: relative; }
+    ._page .under ._L-pinkR-purple .under-box-r p {
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1.66;
+      margin: 6rem 3% 0 10%; }
+    ._page .under ._L-pinkR-purple .under-box-r::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 78px solid #fff;
+      border-right: solid 89px transparent; }
+._page .under ._bk_beige {
+  background: #EDE8E2;
+  padding-top: 17.8rem;
+  padding-bottom: .6rem; }
+  ._page .under ._bk_beige .under-inner {
+    width: 80%;
+    margin: auto; }
+  ._page .under ._bk_beige h3.under-tit {
+    font-family: "Poppins", sans-serif;
+    font-size: 7.6rem;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.06em;
+    margin-bottom: 11.1rem; }
+._page .under-dl {
+  display: flex;
+  flex-wrap: wrap; }
+._page .under-dt, ._page .under-dd {
+  border-bottom: solid 0.1rem #D8D8D8;
+  line-height: 1.6;
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 2.8rem;
+  padding-left: 2%;
+  margin-bottom: 4.7rem; }
+._page .under-dt {
+  font-family: "Poppins", sans-serif;
+  width: 40%; }
+._page .under-dd {
+  width: 60%; }
+
+._about .under-box {
+  display: flex;
+  padding-top: 16.6rem; }
+  ._about .under-box-l {
+    flex: 1; }
+    ._about .under-box-l h2.under-tit {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 12rem;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      color: #4F4583;
+      margin-left: 10%;
+      position: relative;
+      height: 1em;
+      margin-left: 19%; }
+      ._about .under-box-l h2.under-tit::before {
+        content: '';
+        width: 19.6rem;
+        height: 5.9rem;
+        display: block;
+        background: #E66969;
+        position: absolute;
+        top: 0;
+        left: -.1rem;
+        z-index: 1; }
+      ._about .under-box-l h2.under-tit span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 6.7%;
+        z-index: 5; }
+      ._about .under-box-l h2.under-tit::before {
+        top: 17.2rem;
+        left: 2%; }
+      ._about .under-box-l h2.under-tit span:first-of-type {
+        top: 9.8rem;
+        left: 37%; }
+      ._about .under-box-l h2.under-tit span:last-of-type {
+        top: 20.3rem;
+        left: 62%; }
+  ._about .under-box-r {
+    flex: 1;
+    padding-top: 1.1rem; }
+    ._about .under-box-r p.under-tit {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 3.2rem;
+      color: #333333;
+      line-height: 1.5625;
+      margin: 0 0 2rem 2%; }
+    ._about .under-box-r p.under-txt {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 2rem;
+      line-height: 2;
+      margin: 0 17% 4rem 2%; }
+._about .under-inner {
+  width: 47%;
+  margin-top: 14.5rem; }
+  ._about .under-inner p.under-tit {
+    font-size: 3.2rem;
+    color: #333333;
+    line-height: 1.34375;
+    margin: 0 0 2.3rem; }
+  ._about .under-inner p.under-txt {
+    line-height: 2.4;
+    margin-bottom: 4.9rem; }

@@ -1,22 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>無題ドキュメント</title>
-</head>
+<?php require_once("./inc/header.php"); ?>
+<?php require_once("./inc/kv.php"); ?>
+<?php require_once("./inc/intro.php"); ?>
+<?php require_once("./inc/learn.php"); ?>
+<?php require_once("./inc/news.php"); ?>
+<?php require_once("./inc/four.php"); ?>
+<?php require_once("./inc/sche.php"); ?>
+<?php require_once("./inc/footer.php"); ?>
 
-<body>
-
-<header class="header">
-	<p class="header-logo"><img src="img/logo.png" srcset="img/logo.png 1,img/logo@2x.png 2x" alt=""></p>
-	<p class="header-txt">マーケティングのプロを育てる</p>
-	<nav class="gnav">
-		<span></span>
-		<span></span>
-	</nav>
-</header>	
-	
-	
-	
-</body>
-</html>

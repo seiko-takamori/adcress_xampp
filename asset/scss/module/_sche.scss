@@ -1,0 +1,71 @@
+.sche{
+	margin-top: 17.8vw;
+	margin-bottom: 18vw;
+	&-inner{
+		width: (1023.94/1280)*100%;
+		margin: auto;
+	}
+	h2.sche-tit{
+		@include h2-tit_pink-border();
+		span{
+			top:-.4vw;
+		}
+		margin-bottom: 1vw;
+	}
+
+	&-txt{
+		font-family: $noto;
+		font-size: 2.4rem;
+	}
+	&-list{
+		margin-top: 7.8vw;
+		li{
+			border-bottom: solid .1rem $light-gray;
+			padding-bottom: 2vw;
+			margin-bottom: 4vw;
+			line-height: 1;
+			
+			&:last-of-type{
+				padding-bottom: 2.2vw;
+				margin-bottom: 2.95vw;
+			}
+			
+			span{
+				font-family: $poppins;
+				font-size: 2.4rem;
+				letter-spacing: (80/1000)*1em;
+				display: inline-block;
+				width: 30%;
+				
+				&:first-of-type{
+					margin-left: 2.5%;
+				}
+				&:nth-of-type(2){
+					margin-left: 2.8%;
+				}
+
+				&:last-of-type{
+					font-family: $noto;
+					margin-left: 1.2%;
+				}
+			}
+		}
+	}
+	&-box{
+		display: flex;
+		justify-content: space-between;
+		
+		p.sche-txt{
+			font-family: $noto;
+			font-size: 1.3rem;
+			margin-left: 2%;
+			padding-top: 1.5vw;
+		}
+	}
+	
+	&-btn{
+		@include btn_yajirusi();
+		margin-right: 2%;
+	}
+	
+}

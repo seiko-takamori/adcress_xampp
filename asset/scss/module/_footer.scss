@@ -1,0 +1,44 @@
+.toTop{
+	a{
+		display: block;
+		background: $beige;
+		font-family: $poppins;
+		font-weight: bold;
+		font-size: 2.4rem;
+		color: $purple;
+		text-align: center;
+		padding: .5vw;
+		
+		&:hover{
+			background: $purple;
+			color: $white;
+		}
+	}
+}
+.pageNation{
+	background: $beige;
+	padding: 3.3rem 0;
+	
+	&-list{
+		width: (348/1280)*100%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a{
+			font-family: $poppins;
+			font-size: 3.6rem;
+			font-weight: bold;
+			color: $purple;
+			
+			&:hover{
+				color: $orange;
+			}
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: 30vw;
+	background: $light-blue_footer;
+}

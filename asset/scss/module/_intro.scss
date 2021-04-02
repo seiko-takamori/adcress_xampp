@@ -1,0 +1,48 @@
+.intro{
+	background: $gray;
+	padding: 8.3rem 0px 0px 8%;
+	
+	h2.intro-tit{
+		font-family: $poppins;
+		font-size: 1.8rem;
+		margin-left: 5.9%;
+		letter-spacing: (60/1000)*1em;
+			
+
+	}
+	
+	&-box{
+		background: $white;
+		width: 53.35%;
+		padding: 8.6rem 4% 8.8rem 6.5%;
+		position: relative;
+		margin-top: 16rem;
+		
+		&::before{
+			content: '';
+			width: 2.1rem;
+			height: 18.1rem;
+			background: url("../img/h2_intro@2x.png") no-repeat;
+			background-size: contain;
+			display: block;
+			margin-top: .7rem;
+			position: absolute;
+			top:-15.9rem;
+			left:11%;
+		}
+		
+		.intro-tit{
+			font-family: $noto;
+			font-size: 3.2rem;
+			font-weight: bold;
+			line-height: (50/32);
+			margin-bottom: 1.1rem;
+		}
+		.intro-txt{
+			font-family: $noto;
+			font-size: 2rem;
+			line-height: (36/20);
+			letter-spacing: -0.07em;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.under{
+	&-tit-wrap{
+		background: $gray;
+		padding: 1.5rem 0 9rem;
+	}
+	&-tit{
+		font-family: $poppins;
+		font-size: 12rem;
+		font-weight: bold;
+		letter-spacing: (40/1000)*1em;
+		color: $purple;
+		line-height: 1;
+		width: fit-content;
+		margin: 0 auto;
+		padding-left: 4.4rem;
+	}
+	&-inner{
+		width: (920.5/1280)*100%;
+		margin: 20rem auto;
+	}
+	&-box{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		&-cont{
+			width: 43%;
+			margin-bottom: 6.8rem;
+			
+			&:nth-of-type(2n){
+				margin-top: 7.1rem;
+			}
+		}
+		
+		&-tit{
+			font-family: $poppins;
+			font-size: 3.2rem;
+			font-weight: bold;
+			letter-spacing: (80/1000)*1em;
+			margin-bottom: 1px;
+			
+			span{
+				font-family: $noto;
+				font-size: 3.2rem;
+				color: $aqua;
+				letter-spacing: (40/1000)*1em;
+				font-weight: bolder;
+				margin-left: -1.3rem;
+			}
+		}
+		&-txt{
+			font-family: $noto;
+			font-size: 2rem;
+			line-height: (36/20);
+		}
+
+	}
+}

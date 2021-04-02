@@ -1,0 +1,106 @@
+.four{
+	margin-top: 11.5vw;
+	&-inner{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-box{
+		width: 50%;
+		height: (380/1280)*100vw;
+		text-align: center;
+		
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			
+			&:hover{
+				img{
+					transform: scale(1.1);
+					transition: .3s ease-in-out;
+				}
+
+			}
+		}
+		
+		img{
+			width: (445/640)*100%;
+			position: absolute;
+			top:8.5vw;
+			left: 1%;
+			right: 0;
+			margin: auto;
+			z-index: 1;
+			transition: .3s ease-in-out;
+		}
+		.four-tit{
+			@include h2-tit();
+			font-size: 7.6rem;
+			position: absolute;
+			top:4.8vw;
+			left: 1%;
+			right: 0;
+			margin: auto;
+			z-index: 3;
+
+		}
+		.four-txt{
+			font-family: $noto;
+			font-size: 2.4rem;
+			position: absolute;
+			top:22.2vw;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}	
+		&:first-of-type{
+			a{
+				background: $light_blue;
+			
+			}
+			
+		}
+		&:nth-of-type(2){
+			.four-tit{
+				left: -3%;
+			}
+			img{
+				top: 8.6vw;
+				left: -2%;
+			}
+			.four-txt{
+				left: -2%;
+			}
+		}
+		&:nth-of-type(3){
+			.four-tit{
+				top: 5.3vw;
+				left: 4.9%;
+			}
+			img{
+				top: 8.85vw;
+				left: 1%;
+			}
+			.four-txt{
+				top:22.6vw;
+				left: 1%;
+			}
+		}
+		&:nth-of-type(4){
+			.four-tit{
+				top: 6vw;
+				left: -3.1%;
+			}
+			img{
+				top: 8.8vw;
+				left: -2%;
+			}
+			.four-txt{
+				top:23.25vw;
+				left: 0%;
+			}
+		}
+	}
+
+}

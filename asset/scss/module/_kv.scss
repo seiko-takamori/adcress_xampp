@@ -1,0 +1,98 @@
+.kv{
+	padding-top: 13.7rem;
+	background: url("../img/bk_h1@2x.png") $gray;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: 51%;
+	
+	h1.div-tit{
+		font-family: $poppins;
+		font-size: 14.8rem;
+		font-weight: bold;
+		line-height: (160/148);
+		color: $white;
+		letter-spacing: (60/1000)*1em;
+		width: fit-content;
+		margin: auto;
+		padding-top: .3rem;
+		padding-left: .6rem;
+	}
+	a.div-box{
+		width: (244/1280)*100%;
+		margin-left: auto;
+		margin-top: 3.2rem;
+		background: $white;
+		padding: .3rem 1.7rem 1.6rem 2.4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: .5s;
+		
+		&:hover{
+			background: $purple;
+			transition: .5s;
+			.kv-inner{
+				.div-tit{
+					color: $white;
+					transition: .5s;
+					
+					span{
+						color: $white;
+						transition: .5s;
+					}
+				}
+				.div-txt{
+					color: $white;
+					transition: .5s;
+				}
+			}
+			.div-btn{
+				img{
+					transform: scale(2);
+					transition: .5s;
+				}
+			}
+		}
+	}
+	.div-btn{
+		background: $light-blue;
+		border-radius: 50%;
+		width: 3.4rem;
+		height: 3.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: .7rem;
+		
+		img{
+			width: 1.8rem;
+			height: 1.8rem;
+			transition: .5s;
+		}
+		
+	}
+	.kv-inner{
+		.div-tit{
+			font-family: $poppins;
+			font-size: 2.2rem;
+			font-weight: 500;
+			color: $purple;
+			letter-spacing: (30/1000)*1em;
+			transition: .5s;
+			
+			span{
+				font-size: (10/22)*1em;
+				color: $black;
+				margin-left: 1.7rem;
+				display: inline-block;
+				vertical-align: .2rem;
+				transition: .5s;
+			}
+		}
+		.div-txt{
+			font-family: $noto;
+			font-size: 1.3rem;
+			transition: .5s;
+		}
+	}
+}

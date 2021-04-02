@@ -1,0 +1,363 @@
+// Scss Document
+@charset "utf-8";
+
+$poppins:'Poppins', sans-serif;
+$noto:'Noto Sans JP', sans-serif;
+$gray:#CACED8;
+$light-gray:#D8D8D8;
+$light-blue:#E8EDFC;
+$light-blue_footer:#AFB8CB;
+$white:#fff;
+$purple:#4F4583;
+$black:#333333;
+$orange: #E66969;
+$aqua:#61DED1;
+$aqua2:#56C4B9;
+$beige:#EDE8E2;
+
+@import "./font/_font";
+@import "./base/_destyle";
+@import "./mixin/_tit";
+@import "./mixin/_btn";
+@import "./module/_header";
+@import "./module/_kv";
+@import "./module/_intro";
+@import "./module/_learn";
+@import "./module/_news";
+@import "./module/_four";
+@import "./module/_sche";
+@import "./module/_footer";
+@import "./module/_under";
+@import "./module/_archive";
+@import "./module/_single";
+//body{
+//	background: url("../../art/index – 3.png") no-repeat;
+//	background-size: cover;
+//	opacity: 0.7;
+//	background-position-y:-454px;
+//}
+._page{
+	.under{
+		&-tit-wrap_h1{
+			background: $gray;
+			padding: 8.2rem 0 14.2rem;
+		}
+		h1.under-tit{
+			font-family: $poppins;
+			font-size: 12rem;
+			letter-spacing: (40/1000)*1em;
+			line-height: 1;
+			padding-left: 0;
+		}
+		&-tit-wrap_h2{
+			width: (743/1280)*100%;
+			backdrop-filter: blur(30px);
+			margin-top: -19.7rem;
+			padding-top: 9rem;
+			padding-left: 4.7%;
+			padding-bottom: 6.7rem;
+		}
+		h2.under-tit{
+			@include h2-tit_pink-border();
+			span{
+				left: 70.7%;
+			}
+		}
+		.under-inner{
+			width: (864/1280)*100%;
+			margin-top: 4rem;
+			margin-bottom: 9.8rem;
+		}
+		.under-box{
+			&-tit{
+				margin-bottom: 1.2rem;
+				span{
+					&:first-of-type{
+						background: $beige;
+						font-family: $poppins;
+						font-size: 3.2rem;
+						color: $purple;
+						margin-left: 0;
+						display: inline-block;
+						width: 8rem;
+						height: 8rem;
+						line-height: 8rem;
+						text-align: center;
+					}
+					&:nth-of-type(2){
+						margin-left: 5%;
+						font-family: $noto;
+						font-size: 2.4rem;
+						font-weight: normal;
+						white-space: nowrap;
+						color: $black;
+					}
+				}
+			}
+		}
+		._beige-inner{
+			width: (1025/1280)*100%;
+			margin: 0 auto 19rem;
+			
+			h3.under-tit{
+				padding-left: 1%;
+				margin: 0;
+				width: (340/1025)*100%;
+				background: $aqua;
+				color: $purple;
+				font-family: $poppins;
+				font-size: 2.4rem;
+				text-align: center;
+				line-height: 7.7rem;
+				position: relative;
+				
+				&::after{
+					content: '';
+					display: block;
+					border-top: solid 4.2rem $aqua2;
+					border-left: solid (9.8rem/2) transparent;
+					border-right: solid (9.8rem/2) transparent;
+					width: 9.8rem;
+					height: 4.2rem;
+					position: absolute;
+					top:2rem;
+					right: -5rem;
+				}
+			}
+			.under-box{
+				background: $beige;
+				padding-top: 9rem;
+				
+				&-inner{
+					width: (878/1025)*100%;
+					margin-left: 4.1%;
+					margin-bottom: 7.3rem;
+				}
+				
+				
+				form{
+					margin-bottom: 5.7rem;
+					
+					p{
+						line-height: 7rem;
+						font-family: $noto;
+						font-size: 2.4rem;
+						margin-bottom: 3.6rem;
+						
+						label{
+							display: flex;
+						}
+						
+						span{
+							font-family: $poppins;
+							font-size: 1.3rem;
+							width: 7%;
+						}
+						input{
+							background: $white;
+							margin-left: auto;
+						}
+					}
+				}//form
+				.btn-yajirushi{
+					@include btn_yajirusi();
+					margin-left: auto;
+				}
+
+			}
+		}
+		._overlapp{
+			padding-top: 0;
+			margin-top: 11rem;
+			position: relative;
+			display: block;
+			.under-box-l{
+				background: $beige;
+				width: (836/1280)*100%;
+				height: (580/1280)*100vw;
+			}
+			
+			.under-box-r{
+				padding-top: 0;
+				width: (943/1280)*100%;
+				position: absolute;
+				top: 11.2rem;
+				right: 0;
+			}
+		}//overlapp
+		._L-pinkR-purple{
+			padding: 0.5rem 0 0;
+
+			.under-box-l{
+				background: $orange;
+				flex-grow: 1;
+				padding: 7.5rem 0 8.4rem;
+				position: relative;
+				
+				p{
+					color: $white;
+					font-size: 3.2rem;
+					text-align: center;
+					line-height: 1;
+					margin-left: -1.4rem;
+				}
+				
+				&::before{
+					content: '';
+					display: block;
+					position: absolute;
+					top:0;
+					right: 0;
+					border-top: 78px solid $white;
+					border-left: solid 89px transparent;
+				}
+				
+			}
+			.under-box-r{
+				background: $purple;
+				flex-grow: (836/444);
+				position: relative;
+				
+				p{
+					color: $white;
+					font-size: 2rem;
+					line-height: 1.66;
+					margin: 6rem 3% 0 10%;
+				}
+				
+				&::before{
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-top: 78px solid $white;
+					border-right: solid 89px transparent;
+				}
+			}
+			
+		}//_L-pinkR-purple
+		._bk_beige{
+			background: $beige;
+			padding-top: 17.8rem;
+			padding-bottom: .6rem;
+			
+			.under-inner{
+				width: (1024/1280)*100%;
+				margin: auto;
+			}
+			
+
+			
+			h3.under-tit{
+				font-family: $poppins;
+				font-size: 7.6rem;
+				width: 100%;
+				text-align: left;
+				letter-spacing: (60/1000)*1em;
+				margin-bottom: 11.1rem;
+			}
+		}//_bk_beige
+		
+		&-dl{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-dt,
+		&-dd{
+			border-bottom: solid .1rem $light-gray;
+			line-height: 1.6;
+			font-size: 2rem;
+			line-height: 1;
+			padding-bottom: 2.8rem;
+			padding-left: 2%;
+			margin-bottom: 4.7rem;
+		}
+		&-dt{
+			font-family: $poppins;
+			width: 40%;
+		}
+		&-dd{
+			width: 60%;
+		}
+		
+	}
+	
+}//page
+._about{
+	.under-box{
+		display: flex;
+		padding-top: 16.6rem;
+		&-l{
+			flex: 1;
+			h2.under-tit{
+				@include h2-tit_pink-border();
+				margin-left: 19%;
+
+				&::before{
+					top: 17.2rem;
+					left: 2%;
+				}
+
+				span{
+					&:first-of-type{
+						top: 9.8rem;
+						left: 37%;
+					}
+					&:last-of-type{
+						top:20.3rem;
+						left: 62%;
+					}
+				}
+
+			}
+		}
+		&-r{
+			flex: 1;
+			padding-top: 1.1rem;
+
+			p.under-tit{
+				font-family: $noto;
+				font-size: 3.2rem;
+				color: $black;
+				line-height: (50/32);
+				margin: 0 0 2rem 2%;
+			}
+			p.under-txt{
+				font-family: $noto;
+				font-size: 2rem;
+				line-height: 2;
+				margin: 0 17% 4rem 2%;
+			}
+		}
+	}//box
+	.under-inner{
+		width: 47%;
+		margin-top: 14.5rem;
+		
+		p.under-tit{
+			font-size: 3.2rem;
+			color: $black;
+			line-height: (43/32);
+			margin: 0 0 2.3rem;
+		}
+		p.under-txt{
+			line-height: 2.4;
+			margin-bottom: 4.9rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
