@@ -17,6 +17,10 @@
 		font-weight: bold;
 		line-height: 3.2;
 		margin-left: 25.4%;
+		@include mq(){
+			display: none;
+		}
+
 	}
 }
 .header._single{
@@ -39,6 +43,9 @@
 	right: 3.5%;
 	z-index: 9999;
 	display: block;
+	@include mq(){
+		top:1.9rem;
+	}
 	span{
 		display: block;
 		height: .3rem;
@@ -96,10 +103,18 @@
 	backdrop-filter: blur(10px);
 	background: rgba(51,51,51,0.8);
 	padding: 5.4rem 10%;
+	@include mq(){
+		padding: 1.6rem 10%;
+	}
 	
 	.header-txt{
 		text-align: center;
 		color: $white;
+		@include mq(){
+			margin-left: 0%;
+			font-size: 1.1rem;
+			line-height: 1.6;
+		}
 	}
 	
 	.gnav{
@@ -112,6 +127,9 @@
 		}
 		&-ul{
 			margin-bottom: 3rem;
+			@include mq(){
+				margin-top: 3.6rem;
+			}
 			li{
 				a{
 					color: $white;

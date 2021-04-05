@@ -19,6 +19,7 @@ $beige:#EDE8E2;
 @import "./base/_destyle";
 @import "./mixin/_tit";
 @import "./mixin/_btn";
+@import "./mixin/_mq";
 @import "./module/_header";
 @import "./module/_kv";
 @import "./module/_intro";
@@ -30,12 +31,12 @@ $beige:#EDE8E2;
 @import "./module/_under";
 @import "./module/_archive";
 @import "./module/_single";
-//body{
-//	background: url("../../art/index – 3.png") no-repeat;
-//	background-size: cover;
-//	opacity: 0.7;
+body{
+	background: url("../../art/iPhone 6-7-8 – 1.png") no-repeat;
+	background-size: cover;
+	opacity: 0.7;
 //	background-position-y:-454px;
-//}
+}
 ._page{
 	.under{
 		&-tit-wrap_h1{

@@ -403,6 +403,9 @@ p {
     font-weight: bold;
     line-height: 3.2;
     margin-left: 25.4%; }
+    @media screen and (max-width: 767px) {
+      .header-txt {
+        display: none; } }
 
 .header._single .header-box {
   padding-bottom: 4.5rem; }
@@ -420,6 +423,9 @@ p {
   right: 3.5%;
   z-index: 9999;
   display: block; }
+  @media screen and (max-width: 767px) {
+    .gnav-btn {
+      top: 1.9rem; } }
   .gnav-btn span {
     display: block;
     height: .3rem;
@@ -464,9 +470,17 @@ p {
   backdrop-filter: blur(10px);
   background: rgba(51, 51, 51, 0.8);
   padding: 5.4rem 10%; }
+  @media screen and (max-width: 767px) {
+    .gnav-wrap {
+      padding: 1.6rem 10%; } }
   .gnav-wrap .header-txt {
     text-align: center;
     color: #fff; }
+    @media screen and (max-width: 767px) {
+      .gnav-wrap .header-txt {
+        margin-left: 0%;
+        font-size: 1.1rem;
+        line-height: 1.6; } }
   .gnav-wrap .gnav::after {
     content: '';
     width: 20%;
@@ -475,6 +489,9 @@ p {
     display: block; }
   .gnav-wrap .gnav-ul {
     margin-bottom: 3rem; }
+    @media screen and (max-width: 767px) {
+      .gnav-wrap .gnav-ul {
+        margin-top: 3.6rem; } }
     .gnav-wrap .gnav-ul li a {
       color: #fff;
       font-family: "Poppins", sans-serif;
@@ -603,7 +620,7 @@ p {
 
 .learn {
   background: url("../img/bk_learn@2x.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: -13.3rem;
   margin-bottom: 13.6rem;
   padding-top: 55.5rem;
@@ -692,6 +709,9 @@ p {
       font-weight: bold;
       font-size: 2.4rem;
       margin-bottom: 1.3rem; }
+      @media screen and (max-width: 767px) {
+        .news-box p.news-tit {
+          font-size: 1.6rem; } }
       .news-box p.news-tit time {
         letter-spacing: 0.08em;
         margin-right: 4.1%; }
@@ -700,6 +720,9 @@ p {
     .news-box p.news-txt {
       font-family: "Noto Sans JP", sans-serif;
       font-size: 2rem; }
+      @media screen and (max-width: 767px) {
+        .news-box p.news-txt {
+          font-size: 1.3rem; } }
     .news-box:nth-of-type(2) {
       margin-top: 7.2rem;
       margin-left: -2%; }
@@ -1072,6 +1095,11 @@ p {
     margin-bottom: 4rem; }
   ._single .under-inner img {
     margin: 5.3rem 0 6.1rem; }
+
+body {
+  background: url("../../art/iPhone 6-7-8 – 1.png") no-repeat;
+  background-size: cover;
+  opacity: 0.7; }
 
 ._page .under-tit-wrap_h1 {
   background: #CACED8;
