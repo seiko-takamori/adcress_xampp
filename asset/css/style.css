@@ -637,11 +637,20 @@ p {
 .intro {
   background: #CACED8;
   padding: 8.3rem 0px 0px 8%; }
+  @media screen and (max-width: 767px) {
+    .intro {
+      padding: 0; } }
   .intro h2.intro-tit {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     margin-left: 5.9%;
     letter-spacing: 0.06em; }
+    @media screen and (max-width: 767px) {
+      .intro h2.intro-tit {
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: fit-content;
+        margin: 2.7rem auto; } }
   .intro-box {
     background: #fff;
     width: 53.35%;
