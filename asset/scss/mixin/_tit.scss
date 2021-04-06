@@ -15,6 +15,9 @@
 	margin-left: 10%;
 	position: relative;
 	height: 1em;
+	@include mq(){
+		font-size: 4.8rem;
+	}
 
 	&::before{
 		content: '';
